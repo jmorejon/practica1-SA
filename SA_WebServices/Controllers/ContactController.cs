@@ -33,5 +33,16 @@ namespace SA_WebServices.Controllers
             ws.createAsync("",0,"",0);
             return "True";
         }
+
+        //GET: api/contact/oauth
+        [HttpGet]
+        [Route("add")]
+        public string autenticacion()
+        {
+
+            ServiceReference1.administratorcontact100Client ws = new ServiceReference1.administratorcontact100Client();
+            ws.createAsync("", 0, "", 0);
+            return "True";
+        }
     }
 }

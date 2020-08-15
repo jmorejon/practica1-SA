@@ -33,5 +33,17 @@ namespace SA_WebServices.Controllers
             ws.createAsync("",0,"",0);
             return "True";
         }
+
+        //GET: api/contact/credentials
+        [HttpGet]
+        [Route("add")]
+        public string ClientCredentials()
+        {
+
+            ServiceReference1.administratorcontact100Client ws = new ServiceReference1.administratorcontact100Client();
+            ws.Endpoint.Name = "";
+           
+            return "True";
+        }
     }
 }
